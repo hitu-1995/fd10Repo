@@ -1,0 +1,19 @@
+server:
+  port: 8081
+ 
+spring:
+  application:
+     name: exception-app
+  
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/fd12
+    username: root
+    password: root
+    
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    show-sql: true  
+      
