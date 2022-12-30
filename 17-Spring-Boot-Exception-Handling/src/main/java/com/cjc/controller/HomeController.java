@@ -26,8 +26,9 @@ public class HomeController {
 	   
 	@GetMapping("/")
 	 public ResponseEntity<String> checkApp() {
-		
+		System.out.println("Hello");
 		return new ResponseEntity<String>("Welcome to App",HttpStatus.OK);
+			
 	}
 
 	 @PostMapping("/saveCustomer")
